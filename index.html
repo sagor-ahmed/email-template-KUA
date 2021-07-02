@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--fontawesome cdn link-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!--fontawesome cdn link-->
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            width: 650px;
+            margin: auto;
+        }
+
+        #main-section {
+            padding: 30px 55px;
+            background-color: #E8F3FE;
+        }
+
+        #logo-section {
+            width: 100%;
+            text-align: center;
+        }
+
+        #customize h3 {
+            text-align: center;
+            font-size: 28px;
+            font-weight: 600;
+            color: #2BB0FF;
+            font-family: 'Roboto', sans-serif;
+        }
+
+        #customize .customize-image {
+            width: 100%;
+            text-align: center;
+            padding: 15px 0;
+        }
+
+        #customize .customize-image img {
+            width: 50%;
+            margin: auto;
+        }
+
+        #hassle-free .fist-heading-in-hassle-section {
+            text-align: center;
+            font-size: 20px;
+            font-family: 'Roboto', sans-serif;
+            color: #EB4C38;
+        }
+
+        #hassle-free .first-para-hassel-section {
+            font-size: 17px;
+            padding: 20px 0;
+        }
+
+        #hassle-free .boxes {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            flex-flow: wrap;
+
+        }
+
+        #hassle-free .boxes .box {
+            width: 32%;
+            background-color: #3562BF;
+            color: #fff;
+            text-align: left;
+            padding: 18px;
+            float: left;
+            margin-right: 8px;
+
+
+        }
+
+        #hassle-free .boxes .box h4 {
+            padding-bottom: 15px;
+            font-size: 18px;
+            font-weight: bold;
+            font-family: 'Roboto', sans-serif;
+        }
+
+        #hassle-free .boxes .box p {
+            font-size: 13px;
+            font-weight: 600;
+            font-family: 'Roboto', sans-serif;
+        }
+
+        #hassle-free .boxes .box:nth-child(3) {
+            margin-right: 0;
+        }
+
+        #hassle-free .boxes .btn {
+            width: 75%;
+            margin: auto;
+            background-color: #EB4C38;
+            border: none;
+            padding: 15px 10px;
+            border-radius: 8px;
+            font-size: 12px;
+            font-weight: 750;
+            margin: 20px 0;
+            color: #fff;
+            font-family: 'Roboto', sans-serif;
+            cursor: pointer;
+        }
+
+        #second-box .boxes-2 {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            flex-flow: wrap;
+        }
+
+        #second-box .boxes-2 .box-2 {
+            width: 48%;
+            text-align: center;
+            padding: 18px;
+            float: left;
+            margin-right: 8px;
+            border: 2px solid #94D6FE;
+        }
+
+        #second-box .boxes-2 .box-2:nth-child(2) {
+            margin-right: 0;
+        }
+
+        #second-box .boxes-2 .box-2 h4 {
+            font-size: 20px;
+            font-weight: 550;
+            font-family: 'Roboto', sans-serif;
+            padding-bottom: 20px;
+            color: #3DB6FF;
+        }
+
+        #second-box .boxes-2 .box-2 p {
+            font-size: 14px;
+            font-weight: 700;
+            text-align: center;
+            padding-bottom: 20px;
+            font-family: 'Roboto', sans-serif;
+            color: #63646B;
+        }
+
+        #second-box .boxes-2 .box-2 p span {
+            color: #EB4C38;
+        }
+
+        #second-box .boxes-2 .box-2 img {
+            width: 60%;
+            height: auto;
+
+        }
+
+        #second-box .boxes2-para {
+            margin-top: 20px;
+            font-size: 14px;
+            font-family: 'Roboto', sans-serif;
+        }
+
+        #second-box .btn {
+            width: 60%;
+            margin: auto;
+            background-color: #EB4C38;
+            border: none;
+            padding: 15px 10px;
+            border-radius: 8px;
+            font-size: 12px;
+            font-weight: 750;
+            margin: 20px 0;
+            color: #fff;
+            font-family: 'Roboto', sans-serif;
+            cursor: pointer;
+        }
+
+        #event-host h4 {
+            color: #EB4C38;
+            text-align: center;
+            font-size: 20px;
+            font-family: 'Roboto', sans-serif;
+            padding: 40px 0;
+        }
+
+        #event-host .event-ul-container {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            flex-flow: wrap;
+        }
+
+        #event-host .event-ul-container .left-events,
+        .right-events {
+            width: 47%;
+            float: right;
+            padding-left: 15px;
+            margin-bottom: 30px;
+            overflow: hidden;
+        }
+
+        #comma {
+            background-color: #3661BD;
+            margin: 20px 0;
+            padding: 15px 20px;
+        }
+
+        #comma img {
+            height: 30%;
+            width: 30%;
+            margin: auto;
+            display: block;
+            padding-bottom: 15px;
+        }
+
+        #comma p {
+            text-align: center;
+            color: #fff;
+            font-size: 15px;
+            font-weight: 500;
+        }
+
+        #comma .jennifer {
+            font-style: italic;
+            text-align: center;
+            font-weight: normal;
+            font-size: 14px;
+        }
+
+        #about-uniassist {
+            background-color: #38B5FF;
+            margin: 40px 0;
+            padding: 15px 20px;
+        }
+
+        #about-uniassist h4 {
+            padding-bottom: 10px;
+            font-size: 22px;
+            font-weight: 600;
+            font-family: 'Roboto', sans-serif;
+            text-align: center;
+            color: #fff;
+        }
+
+        #about-uniassist p {
+            font-size: 15px;
+            font-weight: 600;
+            color: #fff;
+            text-align: center;
+        }
+
+        #about-uniassist .container {
+            text-align: center;
+        }
+
+        #about-uniassist .btn {
+            margin-top: 20px;
+            padding: 12px;
+            border-radius: 4px;
+            border: none;
+            background-color: #EB4C38;
+            font-weight: 600;
+            color: #fff;
+            cursor: pointer;
+        }
+
+        #main-section hr {
+            color: #98AFDE;
+
+        }
+
+        #footer-section {
+            width: 100%;
+            text-align: center;
+            padding-top: 20px;
+        }
+
+        #footer-section .social-icon a img {
+            width: 30px;
+            height: 30px;
+        }
+
+        #footer-section .footer-link {
+            text-align: center;
+        }
+
+        #footer-section .footer-link ul {
+            display: inline-flex;
+
+
+        }
+
+        #footer-section .footer-link ul li {
+            list-style: none;
+
+        }
+
+        #footer-section .footer-link ul li a {
+            font-size: 13px;
+            padding-right: 5px;
+        }
+
+
+
+
+
+
+
+        @media only screen and (max-width: 670px) {
+            body {
+                width: 600px;
+                margin: auto;
+            }
+        }
+
+        @media only screen and (max-width: 600px) {
+            #customize {
+                width: 100%;
+            }
+
+            body {
+                width: 100%;
+            }
+
+            #footer-section .footer-link ul {
+                display: block;
+            }
+        }
+
+        @media screen and (max-width: 530px) {
+            #main-section {
+                padding: 30px 30px;
+                background-color: #E8F3FE;
+            }
+        }
+
+
+        @media screen and (max-width: 500px) {
+
+            .icon {
+                text-align: left;
+            }
+
+            .text-services {
+                padding-left: 0;
+                padding-right: 20px;
+                text-align: left;
+            }
+
+        }
+
+        @media screen and (max-width: 480px) {
+            #hassle-free .boxes .box {
+                width: 100%;
+                margin-bottom: 15px;
+                text-align: center;
+            }
+
+            #hassle-free .first-para-hassel-section {
+                text-align: center;
+            }
+
+            #second-box .boxes-2 .box-2 {
+                width: 100%;
+                margin-bottom: 30px;
+            }
+
+        }
+
+        @media screen and (max-width: 360px) {
+
+            #event-host .event-ul-container .left-events,
+            .right-events {
+                width: 100%;
+            }
+        }
+
+    </style>
+</head>
+
+<body>
+    <section id="main-section">
+        <section id="logo-section">
+            <div class="logo">
+                <img src="img/KIC_Logo_Tagline_C2C - Light Red-dgr 1.57.38 PM.png" alt="">
+            </div>
+        </section>
+        <section id="customize">
+            <h3>Customize your own virtual event, with our team's full support and at no cost to the school.</h3>
+            <div class="customize-image">
+                <img src="img/virtual meeting careers.gif" alt="">
+            </div>
+
+        </section>
+        <section id="hassle-free">
+            <div class="container">
+                <h4 class="fist-heading-in-hassle-section">A hassle-free experience of hosting your own event.</h4>
+                <p class="first-para-hassel-section">Wondering about the best way to implement virtual events for your school this year?UnivAssist can help you hold your school's fairs and events virtually, keeping students focused as they look forward th their futures and careers.School and universities trust us for our experience and dedication, unrivaled platform, and round-the-clock support</p>
+                <div class="boxes">
+                    <div class="box">
+                        <h4>Experience.</h4>
+                        <p>Our expert team has organized 25+ successful education-focused virtual events with participation from 25,000+ students across 65+ countries.</p>
+                    </div>
+                    <div class="box">
+                        <h4>Technology.</h4>
+                        <p>Replicating in-person interaction, our user-friendly, customized WebiFairs platfrom is acknowledge by schools, universities and students as the best out there.</p>
+                    </div>
+                    <div class="box">
+                        <h4>Constant support</h4>
+                        <p>We will help you organize a customized virtual event efficiently, with the full support of our experienced team for all the logistics and technology</p>
+                    </div>
+                    <button class="btn">LEARN MORE: HOST YOUR OWN VIRTUAL CAREER FAIR</button>
+                </div>
+            </div>
+        </section>
+        <section id="second-box">
+            <div class="container">
+                <div class="boxes-2">
+                    <div class="box-2">
+                        <h4>How it works for the school</h4>
+                        <p>You can stay focused on making it a great event, without worrying about the technology <br> <br> With your custom event, you invite the universities/organizations you want to participate, and invite your students/school communities.You have complete control to define the schedule, and we take care of the setup for you!</p>
+                        <img src="img/graduation.gif" alt="">
+                    </div>
+                    <div class="box-2">
+                        <h4>We take care of all the technology and setup</h4>
+                        <p>UnivAssist will lead the technology and logistics front for you, providing the virtual platform, setup, plus training/orientatin, and help desk staff during the event! <br><br>
+                            We take care of the process for universities to pay a technology fee to participate, so your event will be <span>zero cost to the school</span> to organize. </p>
+                        <img src="img/virtual fair interaction.gif" alt="">
+                    </div>
+                    <p class="boxes2-para">Schools are already beginning to plan their academic calendars for the year.Plan your virtual fair now to get a head start on your career and counseling events~</p>
+                    <button class="btn">CONTACT US TO BLOCK YOUR DATES NOW</button>
+                </div>
+            </div>
+        </section>
+        <section id="event-host">
+            <div class="container">
+                <h4>Types of events you can host virtually</h4>
+                <div class="event-ul-container">
+                    <div class="left-events">
+                        <ul>
+                            <li>university/College fairs</li>
+                            <li>region-focused university exhibits and fairs</li>
+                            <li>program-focused events for specific majors or areas of study</li>
+                            <li>career fairs</li>
+                        </ul>
+                    </div>
+                    <div class="right-events">
+                        <ul>
+                            <li>college preparation events</li>
+                            <li>workshops, presentations,symposia</li>
+                            <li>orientatin and meetings</li>
+                            <li>events for consortiums/groups of schools</li>
+                            <li>and more</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="comma">
+            <div class="container">
+                <img src="img/quote.png" alt="">
+                <p>After meeting with the UnivAssist team we fell more than comfortable trusting our fair on the WebFair platform.<strong>Wr organized the event with close to 100 universities and over 900 students in attendance.</strong>Students loved it, university representatives said that it was the best platform they had ever used, and most importantly connections were made! <br><br> The UnivAssist team held my hand through the planning of the event and <strong> made a very challenging event to plan easy.</strong>I would without a doubt <strong>recommend this platform for any school counselors</strong> looking to host a school-based college fair.</p>
+                <p class="jennifer">- Jennifer Tassell, Counselor, International School of Panama</p>
+            </div>
+        </section>
+        <section id="about-uniassist">
+            <div class="container">
+                <h4>About UnivAssist</h4>
+                <p>For high schools around the world, our goal is to help counselors advise their students on how to choose the right-fit university through resources including college visits to your school, virtual WebiFair events, advising sessions, specialized workshops and counseling forums.Our relationship with 250+ global universities ensures that we can connect counselors to the best universities for their students.</p>
+                <button class="btn">LEARN MORE</button>
+            </div>
+        </section>
+        <hr style="border: 1px solid #7393d2;">
+        <section id="footer-section">
+            <div class="container">
+                <img src="img/KIC_Logo_Tagline_C2C - Light Red-dgr 1.57.38 PM.png" alt="">
+                <div class="social-icon">
+                    <a href="#"><img src="img/facebook-visit-default-circle.png" alt=""></a>
+                    <a href="#"><img src="img/twitter-visit-default-circle.png" alt=""></a>
+                    <a href="#"><img src="img/instagram-visit-default-circle.png" alt=""></a>
+                    <a href="#"><img src="img/linkedin-visit-default-circle.png" alt=""></a>
+                    <a href="#"><img src="img/youtube-visit-default-circle.png" alt=""></a>
+                </div>
+                <div class="footer-link">
+                    <ul>
+                        <li><a href="#">About UnivAssist</a></li>
+                        <li><a href="#">Testimonials</a></li>
+                        <li><a href="#">Engage with Universities</a></li>
+                        <li><a href="#">Student Resources</a></li>
+                        <li><a style="color: #eb4c38;" href="#">Upcoming WebiFairs</a></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+    </section>
+</body>
+
+</html>
