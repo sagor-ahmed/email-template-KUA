@@ -293,23 +293,36 @@
 
         #footer-section .footer-link ul {
             display: inline-flex;
-
-
         }
 
-        #footer-section .footer-link ul li {
-            list-style: none;
 
+
+        #footer-section .footer-link ul li:not(:last-child) {
+            margin: 0;
+            padding: 0;
+            position: relative;
+            margin-right: 21px !important;
+            text-align: center;
+            margin: 0 auto;
         }
 
+        /*     #footer-section .footer-link ul li:not(:last-child)::before {
+    content: "";
+    background: #333;
+    width: 4px;
+    height: 4px;
+    position: absolute;
+    border-radius: 50%;
+    top: 10px;
+    margin-right: 3px;
+    right: 0;
+}*/
         #footer-section .footer-link ul li a {
-            font-size: 13px;
-            padding-right: 5px;
+            font-size: 11px;
+            margin: 0;
+            padding: 0;
+            color: #565151;
         }
-
-
-
-
 
 
 
@@ -332,6 +345,16 @@
             #footer-section .footer-link ul {
                 display: block;
             }
+
+            #footer-section .footer-link ul li {
+                width: 100px;
+                margin: 0 auto!important;
+            }
+
+           #footer-section .footer-link ul li:not(:last-child) {
+    margin: 0px auto!important;
+}
+
         }
 
         @media screen and (max-width: 530px) {
@@ -494,7 +517,7 @@
                         <li><a href="#">Testimonials</a></li>
                         <li><a href="#">Engage with Universities</a></li>
                         <li><a href="#">Student Resources</a></li>
-                        <li><a style="color: #eb4c38;" href="#">Upcoming WebiFairs</a></li>
+                        <li><a style="color: #eb4c38;width:100px;margin: 0 auto;" href="#">Upcoming WebiFairs</a></li>
                     </ul>
                 </div>
             </div>
